@@ -21,7 +21,8 @@ st.set_page_config(page_title="Hospital Stay Prediction", page_icon="🏥", layo
 @st.cache_resource
 def load_model():
     model = xgb.XGBRegressor()
-    model.load_model('xgboost_model.json')  # Load model from the saved JSON
+    model.load_model('xgb_model.json')  
+    # Load model from the saved JSON
     return model
 
 model = load_model()
