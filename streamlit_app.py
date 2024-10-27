@@ -8,9 +8,9 @@ import seaborn as sns
 # Load the pre-trained model
 @st.cache_resource
 def load_model():
-model = xgb.XGBRegressor()
-model.load_model('xgboost_model.json') # Load model from the saved JSON
-return model
+  model = xgb.XGBRegressor()
+  model.load_model('xgboost_model.json') # Load model from the saved JSON
+  return model
 
 model = load_model()
 
